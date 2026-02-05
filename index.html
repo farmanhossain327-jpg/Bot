@@ -1,10 +1,3 @@
-Here is the complete, single-file solution. It is architected to be a robust, "Zero-Build" Progressive Web App (PWA) style interface.
-Key Architectural Decisions:
- * Layout: Uses h-dvh (Dynamic Viewport Height) to ensure the address bar on mobile devices (iOS Safari / Android Chrome) does not cover the input bar.
- * Streaming: Implements a robust ReadableStream decoder that handles split JSON chunks from the OpenRouter API to prevent JSON parse errors during high-speed generation.
- * State Management: A monolithic Store object utilizing localStorage to persist all settings, history, and preferences instantly.
- * Safety: The application logic is wrapped in a DOMContentLoaded event at the end of the body to ensure the DOM is ready, preventing blank page issues.
-Copy and save this code as index.html.
 <!DOCTYPE html>
 <html lang="en" class="h-full antialiased">
 <head>
